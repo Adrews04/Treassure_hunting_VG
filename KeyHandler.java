@@ -3,6 +3,8 @@ import java.awt.event.KeyListener;
 
 public class KeyHandler implements KeyListener {
 
+    boolean down_pressed, up_pressed, right_pressed, left_pressed;
+
     @Override
     public void keyTyped(KeyEvent e) {
         // TODO Auto-generated method stub
@@ -11,8 +13,6 @@ public class KeyHandler implements KeyListener {
 
     @Override
     public void keyPressed(KeyEvent e) {
-
-        boolean down_pressed, up_pressed, right_pressed, left_pressed;
 
         int code = e.getKeyCode();
 
@@ -37,7 +37,6 @@ public class KeyHandler implements KeyListener {
 
     @Override
     public void keyReleased(KeyEvent e) {
-        boolean down_pressed, up_pressed, right_pressed, left_pressed, enter_pressed;
 
         int code = e.getKeyCode();
 
