@@ -1,11 +1,14 @@
-package main;
+package src.main;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 public class KeyHandler implements KeyListener {
 
-    boolean down_pressed, up_pressed, right_pressed, left_pressed;
+    public boolean down_pressed;
+    public boolean up_pressed;
+    public boolean right_pressed;
+    public boolean left_pressed;
 
     @Override
     public void keyTyped(KeyEvent e) {
@@ -54,9 +57,6 @@ public class KeyHandler implements KeyListener {
                 break;
             case KeyEvent.VK_D:
                 right_pressed = false;
-                break;
-            case KeyEvent.VK_ENTER:
-
                 break;
 
             default:
